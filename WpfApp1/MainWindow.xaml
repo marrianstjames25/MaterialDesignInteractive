@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500
+        " Width="600">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="LightCoral"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="SignUp" Foreground="White" Style="{StaticResource MaterialDesignLabel}" HorizontalAlignment="Center" Margin="0,33,0,0" VerticalAlignment="Top" FontSize="25"/>
+        <TextBox 
+            materialDesign:HintAssist.Hint="Name"
+materialDesign:HintAssist.Foreground="LightBlue"
+materialDesign:TextFieldAssist.UnderlineBrush="LightBlue"
+            Style="{DynamicResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" Margin="0,97,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Height="34"/>
+        <TextBox
+            materialDesign:HintAssist.Hint="Last Name"
+            materialDesign:HintAssist.Foreground="LightBlue"
+            materialDesign:TextFieldAssist.UnderlineBrush="LightBlue"
+            Style="{DynamicResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" Margin="0,169,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox materialDesign:HintAssist.Hint="Email"
+materialDesign:HintAssist.Foreground="LightBlue"
+materialDesign:TextFieldAssist.UnderlineBrush="LightBlue"
+                 Style="{DynamicResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" Margin="0,244,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox 
+            materialDesign:HintAssist.Hint="Username"
+materialDesign:HintAssist.Foreground="LightBlue"
+materialDesign:TextFieldAssist.UnderlineBrush="LightBlue"
+            
+            Style="{DynamicResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" Margin="0,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Style="{DynamicResource MaterialDesignIconForegroundButton}" Content="Button" HorizontalAlignment="Center" Margin="0,380,0,0" VerticalAlignment="Top" Foreground="White" Background="#FFD02B2B"/>
+
+
+    </Grid>
+</Window>
