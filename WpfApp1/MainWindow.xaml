@@ -14,8 +14,8 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="500
-        " Width="600">
-    <Grid>
+        " Width="300" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,-6">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="LightCoral"/>
@@ -25,26 +25,26 @@
         <Label Content="SignUp" Foreground="White" Style="{StaticResource MaterialDesignLabel}" HorizontalAlignment="Center" Margin="0,33,0,0" VerticalAlignment="Top" FontSize="25"/>
         <TextBox 
             materialDesign:HintAssist.Hint="Name"
-materialDesign:HintAssist.Foreground="LightBlue"
-materialDesign:TextFieldAssist.UnderlineBrush="LightBlue"
+materialDesign:HintAssist.Foreground="White"
+materialDesign:TextFieldAssist.UnderlineBrush="White"
             Style="{DynamicResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" Margin="0,97,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Height="34"/>
         <TextBox
             materialDesign:HintAssist.Hint="Last Name"
-            materialDesign:HintAssist.Foreground="LightBlue"
-            materialDesign:TextFieldAssist.UnderlineBrush="LightBlue"
+            materialDesign:HintAssist.Foreground="White"
+            materialDesign:TextFieldAssist.UnderlineBrush="White"
             Style="{DynamicResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" Margin="0,169,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
         <TextBox materialDesign:HintAssist.Hint="Email"
-materialDesign:HintAssist.Foreground="LightBlue"
-materialDesign:TextFieldAssist.UnderlineBrush="LightBlue"
+materialDesign:HintAssist.Foreground="White"
+materialDesign:TextFieldAssist.UnderlineBrush="White"
                  Style="{DynamicResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" Margin="0,244,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
         <TextBox 
             materialDesign:HintAssist.Hint="Username"
-materialDesign:HintAssist.Foreground="LightBlue"
-materialDesign:TextFieldAssist.UnderlineBrush="LightBlue"
+materialDesign:HintAssist.Foreground="White"
+materialDesign:TextFieldAssist.UnderlineBrush="White"
             
             Style="{DynamicResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" Margin="0,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Style="{DynamicResource MaterialDesignIconForegroundButton}" Content="Button" HorizontalAlignment="Center" Margin="0,380,0,0" VerticalAlignment="Top" Foreground="White" Background="#FFD02B2B"/>
-
+        <Button Style="{DynamicResource MaterialDesignRaisedSecondaryLightButton}" Content="Button" HorizontalAlignment="Center" Margin="0,400,0,0" VerticalAlignment="Top" Foreground="White" Background="#FFAEE6ED" BorderBrush="#FFF3ABB5"/>
+        
 
     </Grid>
 </Window>
