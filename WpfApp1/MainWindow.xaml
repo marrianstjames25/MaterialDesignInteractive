@@ -23,27 +23,27 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Label Content="SignUp" Foreground="White" Style="{StaticResource MaterialDesignLabel}" HorizontalAlignment="Center" Margin="0,33,0,0" VerticalAlignment="Top" FontSize="25"/>
-        <TextBox 
+        <TextBox x:Name="Name_1"
             materialDesign:HintAssist.Hint="Name"
 materialDesign:HintAssist.Foreground="White"
 materialDesign:TextFieldAssist.UnderlineBrush="White"
             Style="{DynamicResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" Margin="0,97,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Height="34"/>
-        <TextBox
+        <TextBox x:Name="Last_name"
             materialDesign:HintAssist.Hint="Last Name"
             materialDesign:HintAssist.Foreground="White"
             materialDesign:TextFieldAssist.UnderlineBrush="White"
             Style="{DynamicResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" Margin="0,169,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-        <TextBox materialDesign:HintAssist.Hint="Email"
+        <TextBox x:Name="Emailtxt" materialDesign:HintAssist.Hint="Email"
 materialDesign:HintAssist.Foreground="White"
 materialDesign:TextFieldAssist.UnderlineBrush="White"
                  Style="{DynamicResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" Margin="0,244,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-        <TextBox 
+        <TextBox x:Name="UsernameTXT"
             materialDesign:HintAssist.Hint="Username"
 materialDesign:HintAssist.Foreground="White"
 materialDesign:TextFieldAssist.UnderlineBrush="White"
             
             Style="{DynamicResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" Margin="0,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Style="{DynamicResource MaterialDesignRaisedSecondaryLightButton}" Content="Button" HorizontalAlignment="Center" Margin="0,400,0,0" VerticalAlignment="Top" Foreground="White" Background="#FFAEE6ED" BorderBrush="#FFF3ABB5"/>
+        <Button Style="{DynamicResource MaterialDesignPaperLightButton}" Content="Button" HorizontalAlignment="Center" Margin="0,400,0,0" VerticalAlignment="Top" Foreground="White" Background="#FFAEE6ED" BorderBrush="#FFF3ABB5"/>
         
 
     </Grid>
