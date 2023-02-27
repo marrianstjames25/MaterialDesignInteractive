@@ -24,5 +24,20 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+
+        public string FirstName
+        {
+
+            get
+            {
+                return Name_1.Text;
+            }
+
+            set
+            {
+                Name_1.Text = value;
+            }
+        }
     }
 }

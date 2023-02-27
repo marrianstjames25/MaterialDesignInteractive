@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp1.Data_Gr"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Data_Gr" Height="500" Width="600">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="LightBlue"/>
+                <GradientStop Color="#FFB7ADE6" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <DataGrid x:Name="DataGrid_" Style="{DynamicResource MaterialDesignDataGrid}" Margin="68,91,68,179"/>
+        <Button Style="{DynamicResource MaterialDesignOutlinedDarkButton}" Content="Load Data" HorizontalAlignment="Center" Margin="0,31,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+
+        <Button Style="{DynamicResource MaterialDesignOutlinedDarkButton}" Content="Add Data" Margin="241,408,241,44" Click="Button_Click_1" />
+        <Button Style="{DynamicResource MaterialDesignOutlinedDarkButton}" Content="Update Data" Margin="75,408,401,44" Click="Button_Click_2" />
+        <Button Style="{DynamicResource MaterialDesignOutlinedDarkButton}" Content="Delete Data" Margin="402,408,80,44" Click="Button_Click_3" />
+
+
+    </Grid>
+</Window>
