@@ -13,8 +13,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="520
-        " Width="300" ResizeMode="NoResize">
+        Title="MainWindow" Height="530
+        " Width="300" ResizeMode="NoResize" ShowInTaskbar="False" WindowStyle="ToolWindow">
     <Grid Margin="0,0,0,-6">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -22,7 +22,7 @@
                 <GradientStop Color="White" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Label Content="SignUp" Foreground="White" Style="{StaticResource MaterialDesignLabel}" HorizontalAlignment="Center" Margin="0,33,0,0" VerticalAlignment="Top" FontSize="25"/>
+        <Label Content="SignUp" HorizontalContentAlignment="Center" Foreground="MediumAquamarine" Style="{StaticResource MaterialDesignLabel}" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" FontSize="25" FontFamily="Cambria Math" Height="39" Width="120"/>
         <TextBox x:Name="Name_1"
             materialDesign:HintAssist.Hint="Name"
 materialDesign:HintAssist.Foreground="White"
@@ -43,7 +43,7 @@ materialDesign:HintAssist.Foreground="White"
 materialDesign:TextFieldAssist.UnderlineBrush="White"
             
             Style="{DynamicResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" Margin="0,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        
+
         <Button Style="{DynamicResource MaterialDesignPaperSecondaryButton}" Content="Sign up" HorizontalAlignment="Center" Margin="0,452,0,0" VerticalAlignment="Top" Foreground="White" Background="MediumAquamarine" BorderBrush="#FFF3ABB5" Click="Button_Click"/>
         <PasswordBox x:Name="PassWordbx"
             materialDesign:HintAssist.Hint="Password"
@@ -52,7 +52,7 @@ materialDesign:TextFieldAssist.UnderlineBrush="White"
             
             Style="{DynamicResource MaterialDesignFloatingHintRevealPasswordBox}" HorizontalAlignment="Center" Margin="0,372,0,0"  VerticalAlignment="Top" Width="120"/>
 
-       
+
 
 
     </Grid>
