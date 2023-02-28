@@ -12,6 +12,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfApp1
@@ -61,19 +62,19 @@ namespace WpfApp1
         {
             try
             {
-                SqlConnection sqlCon = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB; Initial Catalog=SignUpDB; Integrated Security=True");
-                sqlCon.Open();
-                String query = "Insert into SignupTable_ (StudentID, Username, Gender, BirthDate, BorrowerID, Department, ContactNum) values('" + this..Text + "','" + this. .Text + "','" + this..Text + "','" + this..Text + "','" + this..Text + "','" + this..Text + "','" + this.ContactNum.Text + "')";
-                SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
-                sqlCmd.ExecuteNonQuery();
-                MessageBox.Show("Account created successfully");
-                MainWindow sign = new MainWindow();
-                sqlCon.Close();
+                //SqlConnection sqlCon = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB; Initial Catalog=SignUpDB; Integrated Security=True");
+                //sqlCon.Open();
+                ////String query = "Insert into SignupTable_ (StudentID, Username, Gender, BirthDate, BorrowerID, Department, ContactNum) values('" + this..Text + "','" + this. .Text + "','" + this..Text + "','" + this..Text + "','" + this..Text + "','" + this..Text + "','" + this.ContactNum.Text + "')";
+                //SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
+                //sqlCmd.ExecuteNonQuery();
+                //MessageBox.Show("Account created successfully");
+                //MainWindow sign = new MainWindow();
+                //sqlCon.Close();
             }
             catch (Exception a)
             {
-
-                MessageBox.Show(a.Message);
+                
+           
             }
 
         }
@@ -85,12 +86,12 @@ namespace WpfApp1
             SqlConnection sqlCon = new SqlConnection(dbConnection);
             try
             {
-                sqlCon.Open();
-                String query = "UPDATE SignupTable_ set UserID = '" + this. .Text + "'WHERE Username= '" + this. .Text + "'";
-                SqlCommand sqlCMD = new SqlCommand(query, sqlCon);
-                sqlCMD.ExecuteNonQuery();
-                MessageBox.Show("Successfully updated");
-                sqlCon.Close();
+                //sqlCon.Open();
+                //String query = "UPDATE SignupTable_ set UserID = '" + this. .Text + "'WHERE Username= '" + this. .Text + "'";
+                //SqlCommand sqlCMD = new SqlCommand(query, sqlCon);
+                //sqlCMD.ExecuteNonQuery();
+                //MessageBox.Show("Successfully updated");
+                //sqlCon.Close();
             }
             catch (Exception ex)
             {
@@ -106,12 +107,12 @@ namespace WpfApp1
             SqlConnection sqlCon = new SqlConnection(dbConnection);
             try
             {
-                sqlCon.Open();
-                String query = "DELETE from SignupTable_ WHERE StudentID = '" + this. .Text + "'";
-                SqlCommand sqlCMD = new SqlCommand(query, sqlCon);
-                sqlCMD.ExecuteNonQuery();
-                MessageBox.Show("Successfully deleted!");
-                sqlCon.Close();
+                //sqlCon.Open();
+                //String query = "DELETE from SignupTable_ WHERE StudentID = '" + this. .Text + "'";
+                //SqlCommand sqlCMD = new SqlCommand(query, sqlCon);
+                //sqlCMD.ExecuteNonQuery();
+                //MessageBox.Show("Successfully deleted!");
+                //sqlCon.Close();
             }
             catch (Exception ex)
             {

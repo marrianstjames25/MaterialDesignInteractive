@@ -13,7 +13,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500
+        Title="MainWindow" Height="520
         " Width="300" ResizeMode="NoResize">
     <Grid Margin="0,0,0,-6">
         <Grid.Background>
@@ -43,8 +43,17 @@ materialDesign:HintAssist.Foreground="White"
 materialDesign:TextFieldAssist.UnderlineBrush="White"
             
             Style="{DynamicResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" Margin="0,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Style="{DynamicResource MaterialDesignPaperLightButton}" Content="Button" HorizontalAlignment="Center" Margin="0,400,0,0" VerticalAlignment="Top" Foreground="White" Background="#FFAEE6ED" BorderBrush="#FFF3ABB5"/>
         
+        <Button Style="{DynamicResource MaterialDesignPaperSecondaryButton}" Content="Sign up" HorizontalAlignment="Center" Margin="0,452,0,0" VerticalAlignment="Top" Foreground="White" Background="MediumAquamarine" BorderBrush="#FFF3ABB5" Click="Button_Click"/>
+        <PasswordBox x:Name="PassWordbx"
+            materialDesign:HintAssist.Hint="Password"
+            materialDesign:HintAssist.Foreground="White"
+            materialDesign:TextFieldAssist.UnderlineBrush="White"
+            
+            Style="{DynamicResource MaterialDesignFloatingHintRevealPasswordBox}" HorizontalAlignment="Center" Margin="0,372,0,0"  VerticalAlignment="Top" Width="120"/>
+
+       
+
 
     </Grid>
 </Window>
