@@ -40,6 +40,9 @@
     <Reference Include="DocumentFormat.OpenXml, Version=2.19.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
       <HintPath>..\packages\DocumentFormat.OpenXml.2.19.0\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
     </Reference>
+    <Reference Include="Material.Icons, Version=1.1.35.0, Culture=neutral, PublicKeyToken=34ed5903a64b4509, processorArchitecture=MSIL">
+      <HintPath>..\packages\Material.Icons.1.1.35\lib\netstandard2.0\Material.Icons.dll</HintPath>
+    </Reference>
     <Reference Include="MaterialDesignColors, Version=2.0.7.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialDesignColors.2.0.7\lib\net462\MaterialDesignColors.dll</HintPath>
     </Reference>
@@ -66,6 +69,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="GlassEffect.cs" />
+    <Compile Include="System\Drawing\Graphics.cs" />
     <Page Include="Data_Gr.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

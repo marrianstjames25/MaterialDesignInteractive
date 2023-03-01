@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:local="clr-namespace:WpfApp1" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="Data_Gr" Height="500" Width="600">
     <Grid>
@@ -15,6 +15,8 @@
         </Grid.Background>
         <DataGrid x:Name="DataGrid_" Style="{DynamicResource MaterialDesignDataGrid}" Margin="68,91,68,179"/>
         <Button Style="{DynamicResource MaterialDesignOutlinedDarkButton}" Content="Load Data" HorizontalAlignment="Center" Margin="0,31,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <materialDesign:PackIcon Kind="Home" Height="36" Width="36" Margin="10,10,0,0" />
+        <materialDesign:PackIcon Kind="Database" Height="38" Width="38" Margin="10,51,0,0" />
 
         <Button Style="{DynamicResource MaterialDesignOutlinedDarkButton}" Content="Add Data" Margin="241,408,241,44" Click="Button_Click_1" />
         <Button Style="{DynamicResource MaterialDesignOutlinedDarkButton}" Content="Update Data" Margin="75,408,401,44" Click="Button_Click_2" />
